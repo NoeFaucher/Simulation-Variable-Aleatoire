@@ -11,8 +11,8 @@ def bernoulli(p):
     u=rand()
     if (1-p > u):
         return 0
-    else :
-        return 1   
+    else:
+        return 1 
 
 # 2
 def geometrique(p):
@@ -40,4 +40,5 @@ def exponentielle(l):
 
 
 if __name__ == "__main__":
+    
     pass
