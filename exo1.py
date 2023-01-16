@@ -1,5 +1,6 @@
 # Exo 1
 from random import random as rand 
+from math import floor
 
 # 1
 def bernoulli(p):
@@ -32,7 +33,7 @@ def geometrique(p):
         Préconditon: p réel entre 0 et 1
         Simule une variable aléatoire suivant une loi Géométrique
     """
-    res=0
+    res=1
     while bernoulli(p)!=1 :
         res+=1
 
@@ -46,7 +47,7 @@ def uniforme1(k):
         Précondition: k entier k>=2
         Simule une variable aléatoire suivant une loi Uniforme sur [1,k]
     """
-    return 1+(k-1)*rand() 
+    return floor(1+(k-1)*rand()+0.5)
 
 
 # 5
@@ -59,4 +60,5 @@ def uniforme2():
 
 
 if __name__ == "__main__" :
+    
     pass
