@@ -70,6 +70,6 @@ if __name__ == "__main__" :
     for i in range(100000):
         tableau.append(uniforme2())
 
-    sns.histplot(data=tableau, kde=True)
+    #sns.histplot(data=tableau, kde=True)
     #https://seaborn.pydata.org/generated/seaborn.histplot.html
-    plt.show()
+    #plt.show()
