@@ -1,6 +1,9 @@
 # Exo 1
 from random import random as rand 
-from math import floor
+import math
+import matplotlib.pyplot as plt
+import seaborn as sns
+
 
 # 1
 def bernoulli(p):
@@ -47,7 +50,7 @@ def uniforme1(k):
         Précondition: k entier k>=2
         Simule une variable aléatoire suivant une loi Uniforme sur [1,k]
     """
-    return floor(1+(k-1)*rand()+0.5)
+    return math.floor(1+(k-1)*rand()+0.5)
 
 
 # 5
@@ -61,4 +64,12 @@ def uniforme2():
 
 if __name__ == "__main__" :
     
-    pass
+    tableau = []
+
+
+    for i in range(100000):
+        tableau.append(uniforme2())
+
+    sns.histplot(data=tableau, kde=True)
+    #https://seaborn.pydata.org/generated/seaborn.histplot.html
+    plt.show()
