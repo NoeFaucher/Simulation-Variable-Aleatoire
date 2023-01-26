@@ -28,7 +28,7 @@ do_graph(1000,uniform,1,0.5)
 # 2 
 do_graph(1000,exponentielle,0.5,2)
 # 3 
-do_graph(1000,loi3,1,0.666666666666)
+do_graph(1000,loi3,1,2/3)
 
 
 

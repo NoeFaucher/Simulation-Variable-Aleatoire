@@ -20,20 +20,17 @@ Z <- function(n,expr,p,m,s) {
 }
 
 do_graph <- function(max,expr,p,m,s){
-  tab <- c()
-  for (i in 1:max){
-    tab <- c(tab,Z(i,expr,p,m,s))
-  }
+  tab <- replicate(max,Z(max,expr,p,m,s))
   hist(tab,prob=TRUE,plot=TRUE)
-
 }
+x<- seq(-3,3,length.out = 1000)
+y<- dnorm(x)
 
 
 do_graph(1000,uniform,1,0.5,sqrt(1/12))
+lines(x,y,lwd=2,col="red")
 do_graph(1000,exponentielle,0.5,2,2)
+lines(x,y,lwd=2,col="red")
 do_graph(1000,loi3,1,2/3,sqrt(1/18))
-
-x<- seq(-3,3,length.out = 1000)
-y<- dnorm(x)
 lines(x,y,lwd=2,col="red")
 
