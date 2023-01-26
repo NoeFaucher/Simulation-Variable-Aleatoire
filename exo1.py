@@ -48,8 +48,9 @@ def geometrique(p):
 def uniforme1(k):
     """
         Précondition: k entier k>=2
-        Simule une variable aléatoire suivant une loi Uniforme sur [1,k]
+        Simule une variable aléatoire suivant une loi Uniforme sur [1,k] entier
     """
+    # marche pas    
     return math.floor(1+(k-1)*rand()+0.5)
 
 
@@ -70,6 +71,6 @@ if __name__ == "__main__" :
     for i in range(100000):
         tableau.append(uniforme2())
 
-    #sns.histplot(data=tableau, kde=True)
+    sns.histplot(data=tableau, kde=True)
     #https://seaborn.pydata.org/generated/seaborn.histplot.html
-    #plt.show()
+    plt.show()
