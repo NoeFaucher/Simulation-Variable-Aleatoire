@@ -1,3 +1,4 @@
+# Exo 2
 
 uniform <- function(x) runif(x)
 
@@ -40,4 +41,4 @@ poisson(100)
 # 4
 exponentielle <- function(l) -log(1-uniform(1))/l
 
-exponentielle(0.00000005)
+exponentielle(10)
